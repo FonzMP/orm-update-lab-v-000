@@ -65,13 +65,7 @@ class Student
       FROM students
     SQL
 
-    DB[:conn].execute(sql).map do |row|
-      student = Student.new
-      student.id = row[0]
-      student.name = row[1]
-      student.grade = row[2]
-      student
-    end
+    
   end
 
 end
