@@ -59,7 +59,7 @@ class Student
     student
   end
 
-  def self.new_from_db(rpw)
+  def self.new_from_db(row)
     sql = <<-SQL
       SELECT *
       FROM students
