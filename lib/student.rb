@@ -68,8 +68,8 @@ class Student
     DB[:conn].execute(sql).map do |row|
       student = Student.new
       student.id = row[0]
-      student.iname = row[0]
-      student.id = row[0]
+      student.name = row[0]
+      student.grade = row[0]
       student.id = row[0]
     end
   end
